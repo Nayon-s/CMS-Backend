@@ -17,6 +17,9 @@ const teachers = require('./models/teachers.js')
 app.use('/api/authenticate',  require('./routes/authenticate.js'))
 app.use('/api/course',  require('./routes/course.js'))
 
+app.get("/",(req,res)=>{
+  res.json("hi")
+})
 
 
 app.listen(port, () => { 
